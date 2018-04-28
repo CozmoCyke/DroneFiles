@@ -7,8 +7,8 @@ drone = tello.Tello('', 9000, imperial=False)
 print(drone.takeoff())
 time.sleep(6)
 
-print(drone.move_up(90))
-time.sleep(2)
+# print(drone.move_up(90))
+# time.sleep(2)
 
 print(drone.move_forward(300))
 time.sleep(1)
