@@ -7,8 +7,8 @@ drone = tello.Tello('', 9000, imperial=False)
 print(drone.takeoff())
 time.sleep(6)
 
-print(drone.move_up(90))
-time.sleep(2)
+# print(drone.move_up(90))
+# time.sleep(2)
 
 print(drone.move_forward(300))
 time.sleep(1)
@@ -16,13 +16,22 @@ time.sleep(1)
 print(drone.rotate_cw(90))
 time.sleep(2)
 
-print(drone.move_forward(200))
-time.sleep(1)
-
-print(drone.rotate_cw(130))
+print(drone.rotate_cw(90))
 time.sleep(2)
 
-print(drone.move_forward(250))
+print(drone.rotate_cw(90))
+time.sleep(2)
+
+print(drone.rotate_cw(90))
+time.sleep(2)
+
+print(drone.rotate_cw(180))
+time.sleep(2)
+
+print(drone.move_forward(300))
+time.sleep(1)
+
+print(drone.rotate_cw(360))
 time.sleep(2)
 
 print(drone.land())
